@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(103, 11, 165); */
+  background-color: black;
+  color: white;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: linear-gradient(90deg, black 1.18%, white 100%, black 100%);
+  color: white;
+}
+
+.nav-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-head img {
+  width: 50px;
+}
+
+.form-elements {
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs > input {
+  padding: 15px;
+  width: 48%;
+  border: none;
+  border: 1px solid #d5d4d8;
+  border-radius: 10px;
+  margin: 50px 0 20px 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn button {
+  width: 100%;
+  padding: 15px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  position: relative;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+/* IS STATE IMPORTANT TO KNOW */
+
+.state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.state--title {
+  text-align: center;
+}
+
+.state--value {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+}
+
+/* COUNTER PRACTICE */
+
+.counter {
+  display: flex;
+  align-items: flex-end;
+}
+
+.counter > button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #737373;
+  color: #d9d9d9;
+  font-size: 1.5rem;
+}
+
+.counter > button:hover {
+  background-color: #404040;
+  color: #d9d9d9;
+}
+
+.counter > button:focus {
+  outline: none;
+}
+
+.counter--count {
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #262626;
+}
+
+.counter--plus {
+  margin-left: -20px;
+}
+
+.counter--minus {
+  margin-right: -20px;
+  z-index: 1;
+}
+
+.btn-addItems {
+  width: 100%;
+  background-color: transparent;
+  padding: 1rem;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 20px;
+}
+
+.btn-addItems:hover {
+  background-color: #fffef1;
+  color: #2c5e2e;
+}
+
+.btn-addItems:focus {
+  outline: 0;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+  color: #cccccc;
+}
+
+.card {
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  height: 350px;
+  box-shadow: 5px 5px 5px 1px rgba(120, 120, 120, 0.44);
+  -webkit-box-shadow: 5px 5px 5px 1px rgba(120, 120, 120, 0.44);
+  -moz-box-shadow: 5px 5px 5px 1px rgba(120, 120, 120, 0.44);
+}
+
+.card--image {
+  width: 100%;
+  padding: 10%;
+  padding-bottom: 0;
+}
+
+.card--name {
+  margin-block: 13px;
+  color: #333333;
+}
+
+.card--info {
+  padding: 10px;
+}
+
+.card--favorite {
+  width: 25px;
+  cursor: pointer;
+}
+
+.card--contact {
+  font-size: 0.75rem;
+  color: gray;
+  margin-block: 7px;
+}
+
+.box {
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+/* MemeForm */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin-bottom: 15px;
+  height: 45px;
+  width: 100%;
+  text-indent: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: block;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.75rem;
+}
+
+textarea {
+  margin-bottom: 15px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  display: block;
+}
+
+.form-container {
+  display: flex;
+  border: 2px solid white;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 380px;
+  /* text-align: center; */
+  margin: auto;
+  margin-top: 150px;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px black;
+}
+
+.form-container form {
+  width: 70%;
+}
+
+.btn-submit {
+  background-color: rgb(103, 11, 165);
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+}
+
+/* StateAndEffectPractice */
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: darkblue;
+}
+
+.container > button {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.window {
+  text-align: center;
+}
